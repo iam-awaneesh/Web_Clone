@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spoty">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h2>Best Song of The List ...........</h2>
+                 <div class="songItemContainer">
+                    <div class="songItem">
+                        <img src="covers/ishq-Mein.jpg" alt="Song 1">
+                        <span>Love me in</span>
+                        <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                    </div>
+                 </div>
+                       <!-- Song_2 -->
+                 <div>
+                    <div class="songItem">
+                        <img src="covers/khamishiya.jpeg" alt="Song 1">
+                        <span>Love me in</span>
+                        <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                    </div>
+                    <!-- Song_3 -->
+                    <div>
+                        <div class="songItem">
+                            <img src="covers/bekhyali.jpg" alt="Song 1">
+                            <span>Love me in </span>
+                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                        </div>
+                     </div>
+                     <!-- Song_4 -->
+                     <div>
+                        <div class="songItem">
+                            <img src="covers/sanam-Teri-Kasam.jpg" alt="Song 1">
+                            <span>Love me in</span>
+                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                        </div>
+                     </div>
+                     <!-- Song_5 -->
+                     <div>
+                        <div class="songItem">
+                            <img src="covers/5.jpg" alt="Song 1">
+                            <span>Love me in</span>
+                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                        </div>
+                     </div>
+                     <!-- Song_6 -->
+                     <div>
+                        <div class="songItem">
+                            <img src="covers/6.jpg" alt="Song 1">
+                            <span>Love me in</span>
+                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
+                        </div>
+                     </div>
+                 </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0 " min="0" max="100">
+        <div class="icons">
+            
+             <i class="fa-solid fa-backward-step fa-2xl" style="color: #ffffff;"></i>
+             <i class="fa-solid fa-circle-play fa-2xl" id="masterPlay" class="play" style="color: #ffffff;" ></i>
+             <i class="fa-solid fa-forward-step fa-2xl" style="color: #ffffff;"></i>
+
+        </div>
+        <!-- Song_Indicater -->
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" id="gif" alt="">
+            <span id="currentSongName">Ishq-Mein</span>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c05a901a33.js" crossorigin="anonymous"></script>
+</body>
+</html>
