@@ -12,7 +12,7 @@ let songs = [
     {songName: 'Ishq Mein', coverPath: 'covers/ishq-Mein.jpg', filepath:"song/ishq-Mein.mp3"},
     {songName: 'Sanam-Teri-Kasam', coverPath: 'covers/sanam-Teri-Kasam.jpg' , filepath:"song/sanam-Teri-Kasam.mp3"},
     {songName: 'Khamoshiyan', coverPath: 'covers/khamishiya.jpeg' , filepath:"song/khamoshiyan.mp3"},
-    {songName: 'Bekhayali (Arijit Singh Version)', coverPath: '/covers/bekhyali.jpg' , filepath:"song/bekhayali.mp3"},
+    {songName: 'Bekhayali (Arijit Singh Version)', coverPath: 'covers/bekhyali.jpg' , filepath:"song/bekhayali.mp3"},
     {songName: 'ShoorVeer', coverPath: 'covers/shoorveer.jpg', filepath:"song/shoorveer.mp3"},
     {songName: 'Mareez_E_Ishq', coverPath: 'covers/mareez-e-ishq.jpg', filepath:"song/mareez-e-ishq.mp3"},
 ]
