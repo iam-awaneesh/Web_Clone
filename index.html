@@ -3,89 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spoty">Spotify</li>
-            <li>Home</li>
-            <li>About</li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <div class="songList">
-            <h2>Best Song of The List ...........</h2>
-                 <div class="songItemContainer">
-                    <div class="songItem">
-                        <img src="covers/ishq-Mein.jpg" alt="Song 1">
-                        <span>Love me in</span>
-                        <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                    </div>
-                 </div>
-                       <!-- Song_2 -->
-                 <div>
-                    <div class="songItem">
-                        <img src="covers/khamishiya.jpeg" alt="Song 1">
-                        <span>Love me in</span>
-                        <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                    </div>
-                    <!-- Song_3 -->
-                    <div>
-                        <div class="songItem">
-                            <img src="covers/bekhyali.jpg" alt="Song 1">
-                            <span>Love me in </span>
-                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                        </div>
-                     </div>
-                     <!-- Song_4 -->
-                     <div>
-                        <div class="songItem">
-                            <img src="covers/sanam-Teri-Kasam.jpg" alt="Song 1">
-                            <span>Love me in</span>
-                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                        </div>
-                     </div>
-                     <!-- Song_5 -->
-                     <div>
-                        <div class="songItem">
-                            <img src="covers/5.jpg" alt="Song 1">
-                            <span>Love me in</span>
-                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                        </div>
-                     </div>
-                     <!-- Song_6 -->
-                     <div>
-                        <div class="songItem">
-                            <img src="covers/6.jpg" alt="Song 1">
-                            <span>Love me in</span>
-                            <span class="songListPlay"> <span class="timeStamp">05.34 <img src="Icons/play-circle_bl.svg" alt=""></span></span>
-                        </div>
-                     </div>
-                 </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="#1DB954">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+            </svg>
+            <span>Spotify</span>
         </div>
-        <div class="songBanner"></div>
+        <nav class="sidebar-nav">
+            <ul class="nav-main">
+                <li class="active"><i class="fas fa-home"></i><span>Home</span></li>
+                <li><i class="fas fa-search"></i><span>Search</span></li>
+                <li><i class="fas fa-book-open"></i><span>Your Library</span></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="nav-secondary">
+                <li><i class="fas fa-plus-square"></i><span>Create Playlist</span></li>
+                <li><i class="fas fa-heart"></i><span>Liked Songs</span></li>
+            </ul>
+            <div class="divider"></div>
+            <ul class="nav-playlists">
+                <li>Best of Bollywood</li>
+                <li>Romantic Vibes</li>
+                <li>Late Night Drive</li>
+            </ul>
+        </nav>
     </div>
 
-    <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" value="0 " min="0" max="100">
-        <div class="icons">
-            
-             <i class="fa-solid fa-backward-step fa-2xl" style="color: #ffffff;"></i>
-             <i class="fa-solid fa-circle-play fa-2xl" id="masterPlay" class="play" style="color: #ffffff;" ></i>
-             <i class="fa-solid fa-forward-step fa-2xl" style="color: #ffffff;"></i>
-
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Bar -->
+        <div class="topbar">
+            <div class="nav-arrows">
+                <button><i class="fas fa-chevron-left"></i></button>
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="topbar-right">
+                <button class="upgrade-btn">Upgrade</button>
+                <div class="user-avatar"><i class="fas fa-user"></i></div>
+            </div>
         </div>
-        <!-- Song_Indicater -->
-        <div class="songInfo">
-            <img src="playing.gif" width="42px" id="gif" alt="">
-            <span id="currentSongName">Ishq-Mein</span>
-         </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-gradient" id="heroGradient"></div>
+            <div class="hero-content">
+                <div class="hero-cover">
+                    <img src="covers/ishq-Mein.jpg" alt="Playlist Cover" id="heroImg">
+                </div>
+                <div class="hero-info">
+                    <span class="hero-label">PLAYLIST</span>
+                    <h1>Best of Bollywood</h1>
+                    <p class="hero-desc">Top romantic & melodious Bollywood hits — handpicked for your mood.</p>
+                    <span class="hero-meta"><strong>Spotify Clone</strong> &bull; 6 songs &bull; ~35 min</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Row -->
+        <div class="action-row">
+            <button class="big-play-btn" id="bigPlayBtn"><i class="fas fa-play"></i></button>
+            <button class="action-icon-btn"><i class="fas fa-heart"></i></button>
+            <button class="action-icon-btn"><i class="fas fa-ellipsis-h"></i></button>
+        </div>
+
+        <!-- Song Table -->
+        <div class="song-table">
+            <div class="song-table-header">
+                <div class="col-num">#</div>
+                <div class="col-title">TITLE</div>
+                <div class="col-album">ALBUM</div>
+                <div class="col-duration"><i class="fas fa-clock"></i></div>
+            </div>
+            <div id="songsList"></div>
+        </div>
+    </div>
+
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="player-left">
+            <div class="now-playing-cover">
+                <img src="covers/ishq-Mein.jpg" alt="" id="nowPlayingCover">
+            </div>
+            <div class="now-playing-info">
+                <span class="now-playing-title" id="nowPlayingTitle">Ishq Mein</span>
+                <span class="now-playing-artist">Bollywood</span>
+            </div>
+            <button class="like-btn" id="likeBtn"><i class="far fa-heart"></i></button>
+        </div>
+
+        <div class="player-center">
+            <div class="controls">
+                <button class="ctrl-btn tooltip" id="shuffleBtn" data-tip="Shuffle"><i class="fas fa-random"></i></button>
+                <button class="ctrl-btn" id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                <button class="play-pause-btn" id="masterPlay"><i class="fas fa-play"></i></button>
+                <button class="ctrl-btn" id="nextBtn"><i class="fas fa-step-forward"></i></button>
+                <button class="ctrl-btn tooltip" id="repeatBtn" data-tip="Repeat"><i class="fas fa-redo"></i></button>
+            </div>
+            <div class="progress-container">
+                <span class="time-label" id="currentTime">0:00</span>
+                <input type="range" id="myProgressBar" min="0" max="100" value="0">
+                <span class="time-label" id="totalDuration">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-right">
+            <img src="playing.gif" id="playingGif" alt="Playing" class="playing-gif">
+            <button class="ctrl-btn" id="volumeBtn"><i class="fas fa-volume-up"></i></button>
+            <input type="range" id="volumeBar" min="0" max="100" value="80">
+        </div>
     </div>
 
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/c05a901a33.js" crossorigin="anonymous"></script>
 </body>
 </html>
